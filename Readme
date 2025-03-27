@@ -1,0 +1,84 @@
+Movie Explorer
+
+Movie Explorer is a web application that allows users to browse, search, and manage a collection of movies. It demonstrates JavaScript concepts such as handling events, manipulating the DOM, and communicating with a server using GET, POST, PATCH, and DELETE requests.
+
+Features
+
+Fetch and display movie details from a local JSON server.
+
+Search for movies by title.
+
+View movie descriptions, ratings, and available tickets.
+
+Purchase tickets and update availability.
+
+Add new movies to the collection.
+
+Delete movies from the database.
+
+Technologies Used
+
+HTML
+
+CSS
+
+JavaScript
+
+JSON Server (Mock Backend)
+
+Setup Instructions
+
+Clone the repository:
+
+git clone https://github.com/elizabeth-7664/movie-explorer.git
+
+Navigate into the project directory:
+
+cd movie-explorer
+
+Install dependencies (if needed):
+
+npm install
+
+Start the JSON Server:
+
+json-server --watch db.json
+
+Open index.html in your browser to interact with the application.
+
+API Endpoints
+
+The application interacts with the following API endpoints:
+
+GET /movies - Retrieves a list of movies.
+
+GET /movies/:id - Retrieves details of a specific movie.
+
+PATCH /movies/:id - Updates movie details (e.g., available tickets).
+
+POST /movies - Adds a new movie to the collection.
+
+DELETE /movies/:id - Removes a movie from the database.
+
+How to Use
+
+Search for a movie by typing its title in the search bar.
+
+Select a movie from the list to view its details.
+
+Click the "Buy Ticket" button to reduce the available ticket count.
+
+If tickets are sold out, the button will be disabled.
+
+Add new movies using the provided form.
+
+Delete a movie from the list if necessary.
+
+Author
+
+Elizabeth Ndinda.
+
+License
+
+This project is licensed under the MIT License.
+

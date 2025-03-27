@@ -1,0 +1,181 @@
+/* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: red;
+  color: #272121;
+  padding: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: #fff;
+}
+
+/* Header Styling */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Navigation Bar */
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Dark Mode Toggle */
+#dark-mode-toggle {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+#dark-mode-toggle button {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#dark-mode-toggle button:hover {
+  background-color: darkgray;
+}
+
+/* Search and Filter Section */
+#search-section {
+  background-color: rgb(10, 177, 233);
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+#search-input, #filter-select {
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+/* Movie Section */
+#movie-section {
+  margin-top: 20px;
+}
+
+#movie-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.movie-card {
+  background-color: rgb(14, 207, 255);
+  padding: 15px;
+  border-radius: 12px;
+  width: 220px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.movie-card h3 {
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Review Modal */
+#review-modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  width: 300px;
+}
+
+#review-modal textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#review-modal button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#review-modal button:hover {
+  background-color: darkgray;
+}
+
+/* Favorites Section */
+#favorites-section {
+  margin-top: 20px;
+}
+
+#favorites-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Button Styling */
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: darkgray;
+}
